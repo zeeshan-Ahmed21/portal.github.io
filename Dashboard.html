@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.span{
+    background-color: rgb(43, 42, 39);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 60px;
+    width: 100%;
+    margin-top: -6px;
+    color: white;
+}
+.dashboard{
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    font-size: 25px;
+    padding-left: 10px;
+}
+.bc{
+    background-color: lightgoldenrodyellow;
+    height: 629px;
+    width: 100%;
+    padding-top: 30px;
+}
+.today{
+    background-color: rgb(50, 70, 255);
+    height: 40px;
+    width: 1450px;
+    padding-top: 26px;
+    padding-left: 15px;
+    margin: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+}
+.sec{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    color: white;
+}
+.sec img{
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 66px;
+    padding-top: 10px;
+    
+}
+.sec h5{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="sec"> <h5>Abdullahbrothers</h5>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH23wl-q67cob4TWDwiHMie9RaSfX5A7Vm3tvs39u2KQ&s" alt=""><br><br>
+            <center>
+            <label for="cars">SJG B Group</label>
+
+<select id="cars">
+  <option value="Profile">Profile</option>
+  <option value="Logout">Logout</option>
+</select>
+<br>
+(MedicalRep)
+</center>
+        </div>
+        <a href="#">Dashboard</a>
+        <a href="#">Creat Order</a>
+        <a href="#">Track Pending Order</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="span">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      <div class="dashboard">
+        <h3>Dashboard</h3>
+      </div>
+      <div class="bc">
+        <div class="today">TODAY'S STATS</div>
+      </div>
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+         
+</body>
+</html>
